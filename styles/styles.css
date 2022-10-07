@@ -1,0 +1,140 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body{
+    background-color: #000;
+    color: #fff;
+    padding: 0 120px;
+    padding-top: 55px;
+}
+.headTitle{
+    font-size: 40px;
+    line-height: 45px;
+    font-weight: 700;
+}
+.counterStatistic{
+    font-size: 40px;
+    line-height: 60px;
+    font-weight: 700;
+}
+.additionalText{
+    font-size: 16px;
+    line-height: 24px;  
+}
+.statistic{
+    min-width: 125px;
+    flex: 1;
+}
+
+.container{
+    padding-top: 55px;
+    display: flex;
+    width: 100%;
+}
+.map{
+    flex:4;
+}
+
+/*foooter*/
+.player{
+    width: 100%;
+    padding-top: 25px;
+}
+
+.buttonPlayPause{
+    cursor: pointer;
+}
+
+.playerControlButtons{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.playerData{
+    display: flex;
+    align-items: flex-end;
+    overflow: hidden;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.playersItem{
+    min-width: 8px;
+    background-color: #292929;
+    margin-right: 2px;
+}
+.playersItemActive{
+    min-width: 8px;
+    background-color: antiquewhite;
+    margin-right: 2px;
+}
+.playersItem:hover{
+    background-color: antiquewhite ;
+    cursor: pointer;
+}
+.playersItem:last-child{
+    margin-right: 0px;
+}
+.playerNavigation{
+    padding-top: 2px;
+}
+.datePointer{
+    width: 16px;
+    background-color: #222222;
+    height: 10px;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+.dateContainer{
+    display: inline-block;
+    background-color: #222222;   
+    font-size: 16px;
+    line-height: 20px;
+    padding: 5px 10px;
+}
+#scrollBar{
+    position: relative;
+    display: inline-block;
+}
+#scrollBar:hover{
+    cursor: e-resize;
+}
